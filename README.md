@@ -1,18 +1,4 @@
 # NAgłówek 1
-<table border="3">
-  <thread>
-        <tr>
-            <th>dobry content</th>
-            <th>jeszcze lepszy content</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>[koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv)</td>
-            <td>[mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)</td>
-        </tr>
-    </tbody>
-</table>
 
 paragraf
 
@@ -28,5 +14,19 @@ i jeszcze jeden paragraf
 | [koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv) | [mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)|
 
 
-
 ![skała.webp](skała.webp)
+
+<table border="3">
+  <thread>
+        <tr>
+            <th>dobry content</th>
+            <th>jeszcze lepszy content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv)</td>
+            <td>[mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)</td>
+        </tr>
+    </tbody>
+</table>
