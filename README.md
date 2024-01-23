@@ -26,7 +26,7 @@ i jeszcze jeden paragraf
     <tbody>
         <tr>
             <td><img src="http://placekitten.com/200/300" alt="kot"></td>
-            <td>[mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)</td>
+            <td><img src="http://placekitten.com/300/200" alt"kot2"></td>
         </tr>
     </tbody>
 </table>
