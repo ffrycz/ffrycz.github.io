@@ -8,7 +8,7 @@ i jeszcze jeden paragraf
 
 [ciekawy link](https://youtube.com/shorts/HqtERMjMYPc?si=jFht1P_JE2RC647c)
 
-### Tabela
+### Tabela w md która nie wyświetla się na stronie jako tabela
 |dobry content| jeszcze lepszy content|
 |-------------|-------------------------|
 | [koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv) | [mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)|
@@ -25,7 +25,7 @@ i jeszcze jeden paragraf
     </thead>
     <tbody>
         <tr>
-            <td>[koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv)</td>
+            <td><img src="http://placekitten.com/200/300" alt="kot"></td>
             <td>[mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)</td>
         </tr>
     </tbody>
