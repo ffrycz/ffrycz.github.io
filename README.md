@@ -14,3 +14,7 @@ i jeszcze jeden paragraf
 | [koło małp](https://youtu.be/ymdhRMiMGK0?si=DmIi4x5RLXKJhIIv) | [mlem](https://youtu.be/kvxCU_lQwKM?si=uthDvtMqgjXrQ9Ub)|
 
 ![skała.webp](skała.webp)
+
+p {
+  color:green;
+}
