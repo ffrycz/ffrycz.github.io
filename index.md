@@ -3,9 +3,10 @@ title: Hello World!
 tagline: I wish I knew what I'm doing.
 ---
 
-I have set up a blog to publish the stuff on my mind that are too long for a facebook status. We'll see how that goes.
-    
-## Posts so far...
+Strona zbudowana na podstawie [https://geon.github.io](https://geon.github.io)
+Kiedyś przerobię ją na swoją
+
+## Posty...
 
 <ul class="posts">
   {% for post in site.posts %}

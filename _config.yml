@@ -1,6 +1,6 @@
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: false
 
 # This is the default format.
@@ -10,13 +10,13 @@ permalink: /:categories/:year/:month/:day/:title
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title: geon
+title: ffrycz
 # tagline: Site Tagline
 # description: [A short description of your site's purpose]
 author:
-    name: Victor Widell
-    email: victor_widell@gmail.com
-    github: geon
+  name: Franciszek Frycz
+  email: f.frycz.531@studms.ug.edu.pl
+  github: ffrycz
 #  twitter : username
 #  feedburner : feedname
 
@@ -28,6 +28,6 @@ author:
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://geon.github.io
+production_url: http://ffrycz.github.io
 
 future: true
