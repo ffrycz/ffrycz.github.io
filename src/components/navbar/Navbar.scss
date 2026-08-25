@@ -1,0 +1,119 @@
+$background-gradient: linear-gradient(
+        #04ceff,
+        #3a3aff,
+        #3c0aff,
+        blue,
+        #000ab2,
+        #380077);
+
+$nav-button-bg: linear-gradient(#5858ec, #4582f1, rgb(0 0 0 / 0.22));
+
+$lighten-percentage: 20%;
+$lightened-gradient: linear-gradient(
+        #95d2ff,
+        lighten(#04ceff, 5%),
+        lighten(#3c0aff, $lighten-percentage),
+        lighten(blue, $lighten-percentage),
+        lighten(#000ab2, $lighten-percentage),
+        lighten(#1b003d, $lighten-percentage)
+);
+
+
+@mixin nav-button {
+  border: black solid 1px;
+  border-radius: 6px 6px 6px 6px;
+  color: white;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  padding: 8px 10px 5px 10px;
+  margin: 0 0.1rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.activeNavButton {
+  @include nav-button;
+  background: cornflowerblue;
+  box-shadow: #484848 1px 1px 2px 2px inset;
+
+}
+
+button {
+  color: white;
+}
+
+.navbarBox {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navButton {
+  @include nav-button;
+  background: $nav-button-bg;
+}
+
+.navButton:active {
+  box-shadow: #1b003d 2px 2px 2px inset;
+}
+
+.navButton:hover {
+  background-color: rgba(0 0 0/ 0.22);
+}
+
+.navButtonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.3rem 1rem 0.3rem 1rem;
+  width: 100%;
+}
+
+
+.homeButton {
+  background-image: radial-gradient(#00d700, green);
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: #006708 1px 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-style: italic;
+  height: 100%;
+  padding-top: 1rem;
+  width: 7rem;
+}
+
+.homeButton:hover {
+  color: darken(white, 13%);
+  background-image: radial-gradient(darken(#00d700, 10%), darken(green, 10%));
+}
+
+.homeButton:active {
+  color: darken(white, 60%);
+  background-image: radial-gradient(lighten(#00d700, 5%), green);
+}
+
+.homeIcon {
+  bottom: 2px;
+  margin-right: 0.3rem;
+  height: 1.3rem;
+  position: relative;
+}
+
+.navbarBox {
+  background-image: $background-gradient;
+}
+
+.navEdge {
+  align-self: center;
+  background-image: $lightened-gradient;
+  border: #000ab2 1px solid;
+  font-size: 1rem;
+  height: 60%;
+  padding: 0.5rem;
+
+}
