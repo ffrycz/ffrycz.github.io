@@ -10,6 +10,7 @@ function Navbar({sources}) {
         <nav className={"navbarBox"}>
             <div className={"homeButtonContainer"}>
                 <button
+                    title={"Go to home page"}
                     className={"homeButton"}
                     onClick={() => navigate("/")}
                 >

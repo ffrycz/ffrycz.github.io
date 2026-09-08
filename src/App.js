@@ -13,9 +13,10 @@ class Source {
 
 const navbarSources = [
     new Source("Dysleksja", "/dyslexia"),
-    new Source("Placeholder1", "/dyslexia"),
-    new Source("Placeholder2", "/dyslexia"),
-    new Source("Placeholder3", "/dyslexia"),
+    new Source("Programowanie", "/programming"),
+    new Source("Filmy", "/movies"),
+    new Source("Muzyka", "/music"),
+    new Source("Gry", "/games"),
 ]
 
 function App() {
@@ -26,13 +27,15 @@ function App() {
             <Navbar
                 sources={navbarSources}
             />
+        </header>
+        <main>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/programming/2026/04/10/dyslexia"
                        element={<Navigate to="/dyslexia"/> } />
                 <Route path="/dyslexia" element={<Dyslexia />} />
             </Routes>
-        </header>
+        </main>
     </div>
   );
 }
