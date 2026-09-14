@@ -1,11 +1,43 @@
 .App {
   background-color: #5a7dda;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .App-header {
   font-size: calc(5px + 2vmin);
   color: white;
+}
+
+blockquote {
+  background-color: #dce3fd;
+  border: whitesmoke solid 1px;
+  border-radius: 1rem;
+  font-style: italic;
+  padding: 0 1rem;
+  position: relative;
+}
+
+blockquote:nth-of-type(even):before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 0;
+  height: 0;
+  right: 95%;
+  border-top: 1rem solid #dce3fd;
+  border-right: 13px solid transparent;
+}
+
+blockquote:nth-of-type(odd):before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 0;
+  height: 0;
+  right: 5%;
+  border-top: 1rem solid #dce3fd;
+  border-left: 1rem solid transparent;
 }
 
 main {
@@ -14,9 +46,6 @@ main {
 
 .pageContainer {
   background-color: white;
-  border: 0.4rem solid blue;
-  border-radius: 0.5rem;
-  border-top-width: 1rem;
   height: 82vh;
   overflow: scroll;
   padding: 0.1rem 2vh 2vh;

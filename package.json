@@ -9,6 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-draggable": "^4.7.1",
+    "react-icons": "^5.7.0",
     "react-router-dom": "^7.18.2",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
@@ -38,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^7.2.4",
+    "ajv": "^8.20.0",
     "gh-pages": "^6.3.0"
   }
 }

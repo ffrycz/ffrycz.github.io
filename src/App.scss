@@ -1,14 +1,47 @@
 $active-scrollbar-bg-color: rgb(121 120 120);
+$blockquote-color: #dce3fd;
 
 .App {
    background-color: #5a7dda;
    //text-align: center;
    min-height: 100vh;
+  overflow: hidden;
  }
 
 .App-header {
   font-size: calc(5px + 2vmin);
   color: white;
+}
+
+blockquote {
+  background-color: $blockquote-color;
+  border: whitesmoke solid 1px;
+  border-radius: 1rem;
+  font-style: italic;
+  padding: 0 1rem;
+  position: relative;
+}
+
+@mixin blockquote-before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 0;
+  height: 0;
+}
+
+blockquote:nth-of-type(even):before {
+  @include blockquote-before;
+  right: 95%;
+  border-top: 1rem solid $blockquote-color;
+  border-right: 13px solid transparent;
+}
+
+blockquote:nth-of-type(odd):before {
+  @include blockquote-before;
+  right: 5%;
+  border-top: 1rem solid $blockquote-color;
+  border-left: 1rem solid transparent;
 }
 
 main {
@@ -17,9 +50,6 @@ main {
 
 .pageContainer {
   background-color: white;
-  border: 0.4rem solid blue;
-  border-radius: 0.5rem;
-  border-top-width: 1rem;
   height: 82vh;
   overflow: scroll;
   padding: 0.1rem 2vh 2vh;
@@ -67,16 +97,15 @@ main {
   background-color: $active-scrollbar-bg-color;
 }
 
- ::-webkit-scrollbar-button:single-button:vertical:increment {
-   background-position: center 5px;
-   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 122.88 63.9' style='enable-background:new 0 0 122.88 63.9' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='61.44,63.9 122.88,0 0,0 61.44,63.9'/></g></svg>");
- }
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-position: center 5px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 122.88 63.9' style='enable-background:new 0 0 122.88 63.9' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='61.44,63.9 122.88,0 0,0 61.44,63.9'/></g></svg>");
+}
 
- ::-webkit-scrollbar-button:single-button:vertical:increment:active {
-   background-color: $active-scrollbar-bg-color;
- }
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-color: $active-scrollbar-bg-color;
+}
 
- //
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
   background-position: center;
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 63.9 122.88' style='enable-background:new 0 0 63.9 122.88' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='0,61.44 63.9,122.88 63.9,0 0,61.44'/></g></svg>");
