@@ -4,13 +4,16 @@ $blockquote-color: #dce3fd;
 .App {
    background-color: #5a7dda;
    //text-align: center;
-   min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
  }
 
 .App-header {
-  font-size: calc(5px + 2vmin);
   color: white;
+  font-size: calc(5px + 2vmin);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 blockquote {
@@ -45,7 +48,8 @@ blockquote:nth-of-type(odd):before {
 }
 
 main {
-  padding: 2vh;
+  padding-top: 7vh;
+  height: 100vh;
 }
 
 .pageContainer {
@@ -53,6 +57,11 @@ main {
   height: 82vh;
   overflow: scroll;
   padding: 0.1rem 2vh 2vh;
+}
+
+.pageContent {
+  padding-right: 2vh;
+  padding-left: 2vh;
 }
 
 ::-webkit-scrollbar {

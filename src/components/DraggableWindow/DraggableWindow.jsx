@@ -15,6 +15,7 @@ function DraggableWindow({ children, name="" }) {
             nodeRef={nodeRef}
             handle={".handle"}
             disabled={isDisabled}
+            bounds={"main"}
         >
             <div ref={nodeRef}>
                 <div className={"handle"}>

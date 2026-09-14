@@ -3,21 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/homePage/HomePage';
 import Dyslexia from './pages/dyslexia/Dyslexia';
 import Navbar from "./components/navbar/Navbar";
-
-class Source {
-    constructor(name, path) {
-        this.name = name;
-        this.path = path;
-    }
-}
-
-const navbarSources = [
-    new Source("Dysleksja", "/dyslexia"),
-    new Source("Programowanie", "/programming"),
-    new Source("Filmy", "/movies"),
-    new Source("Muzyka", "/music"),
-    new Source("Gry", "/games"),
-]
+import navbarSources from "./sources";
 
 function App() {
 
