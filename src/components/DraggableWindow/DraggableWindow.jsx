@@ -3,7 +3,7 @@ import {useState, useRef} from "react";
 import Draggable from "react-draggable";
 import { FaLock, FaLockOpen } from "react-icons/fa"
 
-function DraggableWindow({ children, name="" }) {
+function DraggableWindow({ children, name="", bounds="main"}) {
     const nodeRef = useRef(null);
     const [isDisabled, setDisabled] = useState(false);
 
@@ -15,7 +15,7 @@ function DraggableWindow({ children, name="" }) {
             nodeRef={nodeRef}
             handle={".handle"}
             disabled={isDisabled}
-            bounds={"main"}
+            bounds={bounds}
         >
             <div ref={nodeRef}>
                 <div className={"handle"}>
