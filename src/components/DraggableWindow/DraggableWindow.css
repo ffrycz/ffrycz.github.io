@@ -47,9 +47,13 @@
 }
 
 .windowContent {
+  background-color: white;
   border: 0.4rem solid blue;
   border-radius: 0 0 0.5rem 0.5rem;
   border-top-width: 0;
+  height: 82vh;
+  overflow: scroll;
+  padding: 0.1rem 2vh 2vh;
 }
 
 /*# sourceMappingURL=DraggableWindow.css.map */

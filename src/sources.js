@@ -7,10 +7,10 @@ class Source {
 
 const navbarSources = [
     new Source("Dysleksja", "/dyslexia"),
-    new Source("Programowanie", "/programming"),
-    new Source("Filmy", "/movies"),
-    new Source("Muzyka", "/music"),
-    new Source("Gry", "/games"),
+    // new Source("Programowanie", "/programming"),
+    // new Source("Filmy", "/movies"),
+    // new Source("Muzyka", "/music"),
+    // new Source("Gry", "/games"),
 ];
 
 export default navbarSources;

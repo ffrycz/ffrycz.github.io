@@ -48,13 +48,6 @@ main {
   height: 100vh;
 }
 
-.pageContainer {
-  background-color: white;
-  height: 82vh;
-  overflow: scroll;
-  padding: 0.1rem 2vh 2vh;
-}
-
 .pageContent {
   padding-right: 2vh;
   padding-left: 2vh;

@@ -28,6 +28,7 @@ $lightened-gradient: linear-gradient(
   justify-content: center;
   padding: 8px 10px 5px 10px;
   margin: 0 0.1rem;
+  max-width: 20%;
   text-decoration: none;
   width: 100%;
 }
@@ -66,7 +67,6 @@ button {
 
 .navButtonsContainer {
   display: flex;
-  justify-content: space-evenly;
   margin: 0.3rem 1rem 0.3rem 1rem;
   width: 100%;
 }

@@ -8,7 +8,7 @@ function Dyslexia() {
         <div className={"pageContent"}>
             <DyslexicWrapper>
                 <DraggableWindow name={"Dyslexia"}>
-                    <div className={"pageContainer"} >
+                    <div>
                         <abbr title={"Strona została przeze mnie przerobiona z JQuery na React"}>
                             <h3>Poniższa strona jest polskim tłumaczeniem posta ze strony{" "}
                                 <Link to={"https://geon.github.io/programming/2016/03/03/dsxyliea"}>

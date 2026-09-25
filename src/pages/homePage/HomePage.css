@@ -4,18 +4,7 @@
 
 .aboutMeHeader {
   align-items: center;
-  background-image: linear-gradient(
-          to top,
-          #2f89de,
-          #2c85e2,
-          #1e7bde,
-          #076bd6,
-          #0361d2,
-          #0361d2,
-          #025ad1,
-          #015bd0,
-          #509be7,
-  );
+  background-image: linear-gradient(to top, #2f89de, #2c85e2, #1e7bde, #076bd6, #0361d2, #0361d2, #025ad1, #015bd0, #509be7);
   border-radius: 0.5rem;
   box-shadow: inset #014abd -0.3rem 0.05rem 0.6rem 0;
   display: flex;
@@ -37,3 +26,5 @@
   height: 100%;
   object-fit: cover;
 }
+
+/*# sourceMappingURL=HomePage.css.map */
