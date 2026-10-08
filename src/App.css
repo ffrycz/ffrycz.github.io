@@ -1,0 +1,124 @@
+.App {
+  background-color: #5a7dda;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App-header {
+  color: white;
+  font-size: calc(5px + 2vmin);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+blockquote {
+  background-color: #dce3fd;
+  border: whitesmoke solid 1px;
+  border-radius: 1rem;
+  font-style: italic;
+  padding: 0 1rem;
+  position: relative;
+}
+
+blockquote:nth-of-type(even):before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 0;
+  height: 0;
+  right: 95%;
+  border-top: 1rem solid #dce3fd;
+  border-right: 13px solid transparent;
+}
+
+blockquote:nth-of-type(odd):before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 0;
+  height: 0;
+  right: 5%;
+  border-top: 1rem solid #dce3fd;
+  border-left: 1rem solid transparent;
+}
+
+main {
+  padding-top: 7vh;
+  height: 100vh;
+}
+
+.pageContent {
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c0c0c0;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(121, 120, 120);
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 122.88 63.9' style='enable-background:new 0 0 122.88 63.9' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='61.44,0 122.88,63.9 0,63.9 61.44,0'/></g></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-color: rgb(121, 120, 120);
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-position: center 5px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 122.88 63.9' style='enable-background:new 0 0 122.88 63.9' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='61.44,63.9 122.88,0 0,0 61.44,63.9'/></g></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-color: rgb(121, 120, 120);
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-position: center;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 63.9 122.88' style='enable-background:new 0 0 63.9 122.88' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='0,61.44 63.9,122.88 63.9,0 0,61.44'/></g></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+  background-color: rgb(121, 120, 120);
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-position: center;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 63.9 122.88' style='enable-background:new 0 0 63.9 122.88' xml:space='preserve'><style type='text/css'>.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class='st0' points='63.9,61.44 0,122.88 0,0 63.9,61.44'/></g></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+  background-color: rgb(121, 120, 120);
+}
+
+/*# sourceMappingURL=App.css.map */

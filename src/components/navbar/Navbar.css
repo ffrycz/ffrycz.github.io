@@ -1,0 +1,103 @@
+.activeNavButton {
+  border: black solid 1px;
+  border-radius: 6px 6px 6px 6px;
+  color: white;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  padding: 8px 10px 5px 10px;
+  margin: 0 0.1rem;
+  max-width: 20%;
+  text-decoration: none;
+  width: 100%;
+  background: cornflowerblue;
+  box-shadow: #484848 1px 1px 2px 2px inset;
+}
+
+button {
+  color: white;
+}
+
+.navbarBox {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navButton {
+  border: black solid 1px;
+  border-radius: 6px 6px 6px 6px;
+  color: white;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  padding: 8px 10px 5px 10px;
+  margin: 0 0.1rem;
+  max-width: 20%;
+  text-decoration: none;
+  width: 100%;
+  background: linear-gradient(#5858ec, #4582f1, rgba(0, 0, 0, 0.22));
+}
+
+.navButton:active {
+  box-shadow: #1b003d 2px 2px 2px inset;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+.navButtonsContainer {
+  display: flex;
+  margin: 0.3rem 1rem 0.3rem 1rem;
+  width: 100%;
+}
+
+.homeButton {
+  background-image: radial-gradient(#00d700, green);
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: #006708 1px 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-style: italic;
+  height: 100%;
+  padding-top: 1rem;
+  width: 7rem;
+}
+
+.homeButton:hover {
+  color: rgb(221.85, 221.85, 221.85);
+  background-image: radial-gradient(#00a400, #004d00);
+}
+
+.homeButton:active {
+  color: #666666;
+  background-image: radial-gradient(rgb(0, 240.5, 0), green);
+}
+
+.homeIcon {
+  bottom: 2px;
+  margin-right: 0.3rem;
+  height: 1.3rem;
+  position: relative;
+}
+
+.navbarBox {
+  background-image: linear-gradient(#04ceff, #3a3aff, #3c0aff, blue, #000ab2, #380077);
+}
+
+.navEdge {
+  align-self: center;
+  background-image: linear-gradient(#95d2ff, rgb(29.5, 210.9780876494, 255), rgb(141.1836734694, 112, 255), #6666ff, rgb(25, 37.9213483146, 255), rgb(72.1475409836, 0, 163));
+  border: #000ab2 1px solid;
+  font-size: 1rem;
+  height: 60%;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

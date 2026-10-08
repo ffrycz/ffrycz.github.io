@@ -1,0 +1,39 @@
+.aboutMe {
+  color: white;
+}
+
+.aboutMeHeader {
+  align-items: center;
+  background-image: linear-gradient(
+          to top,
+          #2f89de,
+          #2c85e2,
+          #1e7bde,
+          #076bd6,
+          #0361d2,
+          #0361d2,
+          #025ad1,
+          #015bd0,
+          #509be7,
+  );
+  border-radius: 0.5rem;
+  box-shadow: inset #014abd -0.3rem 0.05rem 0.6rem 0;
+  display: flex;
+  height: 3rem;
+  padding-left: 2rem;
+  text-shadow: black 2px 1px;
+}
+
+.pfpFrame {
+  aspect-ratio: 1;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  height: 80%;
+}
+
+.pfpFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

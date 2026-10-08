@@ -1,0 +1,59 @@
+.draggableWindowTitle {
+  bottom: 0.5rem;
+  left: 0.5rem;
+  position: relative;
+}
+
+@mixin handle-button {
+  border: white solid 1px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  position: relative;
+  right: 0.5rem;
+  top: 0.2rem;
+  width: 20px;
+}
+
+.lockedHandleButton {
+  @include handle-button;
+  background-image: radial-gradient(
+          circle at 20%,
+          #ff4949,
+          #c50b0b);
+}
+
+.unlockedHandleButton{
+  @include handle-button;
+  background-image: radial-gradient(
+          circle at 20%,
+          #67ff67,
+          #30d541);
+}
+
+.lockIcon{
+  color: white;
+}
+
+.handle {
+  background-color: blue;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  display: flex;
+  font-size: smaller;
+  font-weight: bolder;
+  height: 1.7rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.windowContent {
+  background-color: white;
+  border: 0.4rem solid blue;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-top-width: 0;
+  max-height: 82vh;
+  overflow: scroll;
+  padding: 0.1rem 2vh 2vh;
+}

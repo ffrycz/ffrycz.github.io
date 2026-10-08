@@ -1,0 +1,45 @@
+@keyframes scroll {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+.tape {
+  background-color: #fcd307;
+  border: brown 1px solid;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tapeContent {
+  align-items: center;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  padding-right: 1em;
+}
+
+.tapeText {
+  max-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.workInProgressMessage {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.workInProgressPanel {
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=workInProgressPanel.css.map */

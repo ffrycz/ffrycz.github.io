@@ -1,0 +1,43 @@
+import "./DraggableWindow.css"
+import {useState, useRef} from "react";
+import Draggable from "react-draggable";
+import { FaLock, FaLockOpen } from "react-icons/fa"
+
+function DraggableWindow({ children, name="", bounds="main", predisabled = false}) {
+    const nodeRef = useRef(null);
+    const [isDisabled, setDisabled] = useState(predisabled);
+
+    const toggleDisabled = () => {
+        if (predisabled) return;
+        setDisabled(!isDisabled);
+    }
+
+    return (
+        <Draggable
+            nodeRef={nodeRef}
+            handle={".handle"}
+            disabled={isDisabled}
+            bounds={bounds}
+        >
+            <div ref={nodeRef}>
+                <div className={"handle"}>
+                    <p className={"draggableWindowTitle"}>{name}</p>
+                    <button
+                        onClick={toggleDisabled}
+                        className={isDisabled ? "lockedHandleButton" : "unlockedHandleButton"}
+                    >
+                        {isDisabled ?
+                            <FaLock className={"lockIcon"}/> :
+                            <FaLockOpen className={"lockIcon"} />
+                        }
+                    </button>
+                </div>
+                <div className={"windowContent"}>
+                    {children}
+                </div>
+            </div>
+        </Draggable>
+    )
+}
+
+export default DraggableWindow;
