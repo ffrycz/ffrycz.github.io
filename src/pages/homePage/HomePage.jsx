@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import homeIcon from "../../images/home.webp";
 import {Link} from "react-router-dom";
+import WorkInProgressPanel from "../../components/workInProgressPanel/workInProgressPanel";
 
 export default function HomePage() {
     return (
@@ -34,6 +35,7 @@ export default function HomePage() {
                 </p>
                 <hr/>
             </div>
+            <WorkInProgressPanel/>
         </div>
     )
 }

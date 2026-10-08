@@ -3,12 +3,14 @@ import {useState, useRef} from "react";
 import Draggable from "react-draggable";
 import { FaLock, FaLockOpen } from "react-icons/fa"
 
-function DraggableWindow({ children, name="", bounds="main"}) {
+function DraggableWindow({ children, name="", bounds="main", predisabled = false}) {
     const nodeRef = useRef(null);
-    const [isDisabled, setDisabled] = useState(false);
+    const [isDisabled, setDisabled] = useState(predisabled);
 
-    const toggleDisabled = () =>
+    const toggleDisabled = () => {
+        if (predisabled) return;
         setDisabled(!isDisabled);
+    }
 
     return (
         <Draggable
