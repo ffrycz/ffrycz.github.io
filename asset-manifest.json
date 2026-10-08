@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.536b4fd5.css",
+    "main.js": "/static/js/main.3dcd27fc.js",
+    "static/media/home.webp": "/static/media/home.2d5c1fd5d08b85b316ce.webp",
+    "static/media/uwaga.webp": "/static/media/uwaga.cfc0c4d36ad3370c981a.webp",
+    "index.html": "/index.html",
+    "main.536b4fd5.css.map": "/static/css/main.536b4fd5.css.map",
+    "main.3dcd27fc.js.map": "/static/js/main.3dcd27fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.536b4fd5.css",
+    "static/js/main.3dcd27fc.js"
+  ]
+}
